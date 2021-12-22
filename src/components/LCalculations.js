@@ -1,7 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-const Calculations = (props) => {
-    //console.log(props.values);
+const LCalculations = (props) => {
     const numbers = props.values;
     const arr = [];
     let k = 0, l = 0;
@@ -48,4 +47,4 @@ const Calculations = (props) => {
     )
 }
 
-export default Calculations;
+export default LCalculations;
