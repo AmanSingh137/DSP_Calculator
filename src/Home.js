@@ -13,14 +13,14 @@ const Home = () => {
                 <div className='card1'>
                     <Link to="/lc">
                         <div className='container'>
-                            <img className='img1' src={calci}></img>
+                            <img className='img1' src={calci} alt='calci'></img>
                             <div class="middle">
                                 <div class="text">CLICK HERE</div>
                             </div>
                         </div>
                     </Link>
                     <div className='lc1'>
-                            <h3>Linear Convolution</h3>
+                            <h3 className='title'>Linear Convolution</h3>
                         <p className='para'>
                             Linear convolution is a mathematical operation.
                             It is done to calculate the output of any Linear-Time Invariant (LTI) system given its input and impulse response.
@@ -31,14 +31,14 @@ const Home = () => {
                 <div className='card1'>
                     <Link to="/cc">
                         <div className='container'>
-                            <img className='img' src={calci}></img>
+                            <img className='img' src={calci} alt='calci'></img>
                             <div class="middle">
                                 <div class="text1">CLICK HERE</div>
                             </div>
                         </div>
                     </Link>
                     <div className='lc'>
-                        <h3>Circular Convolution</h3>
+                        <h3 className='title'>Circular Convolution</h3>
                         <p className='para'>Circular convolution, also known as cyclic convolution, is a special case of periodic convolution, 
                             which is the convolution of two periodic functions that have the same period.</p>
                     </div>
@@ -46,28 +46,28 @@ const Home = () => {
                 <div className='card1'>
                     <Link to="/cross">
                         <div className='container'>
-                            <img className='img' src={calci}></img>
+                            <img className='img' src={calci} alt='calci'></img>
                             <div class="middle">
                                 <div class="text1">CLICK HERE</div>
                             </div>
                         </div>
                     </Link>
                     <div className='lc'>
-                       <h3>Cross Correlation</h3>        
+                       <h3 className='title'>Cross Correlation</h3>        
                         <p className='para'>In signal processing, cross-correlation is a measure of similarity of two series as a function of the displacement of one relative to the other.</p> 
                     </div>
                 </div>
                 <div className='card1'>
                     <Link to="/auto">
                         <div className='container'>
-                            <img className='img' src={calci}></img>
+                            <img className='img' src={calci} alt='calci'></img>
                             <div class="middle">
                                 <div class="text1">CLICK HERE</div>
                             </div>
                         </div>
                     </Link>
                     <div className='lc'>
-                        <h3>Auto Correlation</h3>
+                        <h3 className='title'>Auto Correlation</h3>
                         <p className='para'>Auto correlation measures the relationship between a variable's current value and its past values.</p>
                     </div>
                     

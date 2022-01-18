@@ -1,0 +1,9 @@
+.item{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+.itemP{
+    margin-right: 2%;
+}
