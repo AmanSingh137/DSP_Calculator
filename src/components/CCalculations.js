@@ -1,4 +1,5 @@
 import React from 'react'
+import './LCalculations'
 
 const CCalculations = (props) => {
     const numbers = props.values;
@@ -67,10 +68,10 @@ const CCalculations = (props) => {
     }
 
     const clc = y.slice(0, x).map((item)=>{
-        return <li>{item}</li>
+        return <p className='itemP'>{item}</p>
     })
     return (
-        <div>
+        <div className='item'>
             {clc}
         </div>
     )
