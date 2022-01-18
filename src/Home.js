@@ -28,7 +28,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='card1'>
+                <div className='card1 card2'>
                     <Link to="/cc">
                         <div className='container'>
                             <img className='img' src={calci} alt='calci'></img>
@@ -43,7 +43,7 @@ const Home = () => {
                             which is the convolution of two periodic functions that have the same period.</p>
                     </div>
                 </div>
-                <div className='card1'>
+                <div className='card1 card2'>
                     <Link to="/cross">
                         <div className='container'>
                             <img className='img' src={calci} alt='calci'></img>
@@ -57,7 +57,7 @@ const Home = () => {
                         <p className='para'>In signal processing, cross-correlation is a measure of similarity of two series as a function of the displacement of one relative to the other.</p> 
                     </div>
                 </div>
-                <div className='card1'>
+                <div className='card1 card2'>
                     <Link to="/auto">
                         <div className='container'>
                             <img className='img' src={calci} alt='calci'></img>
