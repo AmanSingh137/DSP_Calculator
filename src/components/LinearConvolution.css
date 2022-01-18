@@ -65,7 +65,7 @@ body{
 
 .output{
     display:hidden;
-    border-style: groove;
+    /* border-style: groove; */
     margin-left: 20%;
     margin-top: 5%;
     width: 70%;
