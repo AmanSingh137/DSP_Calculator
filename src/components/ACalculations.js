@@ -26,9 +26,9 @@ const ACalculations = (props) => {
     }
     const endIndex = arr.length + arr.length - 1;
     console.log(endIndex);
-    const lhg = y.slice(0, l + l - 1).map((item) => { return <li>{item}</li> });
+    const lhg = y.slice(0, l + l - 1).map((item) => { return <p className='itemP'>{item}</p> });
     return (
-        <div>
+        <div className='item'>
             {lhg}
         </div>
     )

@@ -1,0 +1,134 @@
+body{
+    background-color: #dddee0;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.title1{
+    margin-top: 2%;
+    text-align: center;
+    color: #325288;
+    /* text-decoration: none; */
+    text-decoration-line: inherit;
+}
+
+.formCard{
+    margin-top: 5%;
+    width: 500px;
+    height: 200px;
+    border-left-width: 50px;
+    margin-left: 60px;
+    border-top-width: 10px;
+    border-style: outset;
+    border-color: #d1d8ee;
+    border-width: 20px;
+}
+
+.label1{
+    margin: inherit;
+    font-weight: bold;
+}
+
+
+.submit{
+    margin-top: 5%;
+    margin-left: 50%;
+}
+
+.impor{
+    margin-left: 15%;
+}
+
+.changeimp{
+    display: flex;
+}
+
+.impPoints{
+   /* padding-left: 10rem; */
+   margin-top: 2%;
+   border-style: ridge;
+    border-width: thick;
+    border-radius: 30px;
+    margin-left: 10%;
+    width: 450px;
+    height: 300px;
+}
+
+.points{
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.output{
+    display:hidden;
+    /* border-style: groove; */
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 70%;
+    height: max-content;
+}
+
+.out{
+    margin-left: 5%;
+}
+
+
+.btn{
+    background-color: #2fa4e7;
+}
+
+
+.help{
+    margin-left: 10%;
+    background-color: #2fa4e7;
+    margin-bottom: -1.6%;
+}
+
+
+.intro-about{
+    font-weight: bold;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.intro-about1{
+    /* font-weight: bold; */
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+
+
+@media (max-width:850px){
+    .heading{
+        flex-direction: column;
+    }
+    
+    .formCard{
+        margin-left: 1%;
+    }
+
+    .btn{
+        margin-left: 25%;
+    }
+
+    .output{
+        margin-top: 12%;
+        margin-left: 40%;
+    }
+
+    .impor{
+        margin-top: 12%;
+        margin-left: 0%;
+    }
+
+    .changeimp{
+        margin-left: 25%;
+    }
+
+
+}   

@@ -1,4 +1,5 @@
 import React from 'react';
+import './LCalculations.css';
 
 const Calculations = (props) => {
     //console.log(props.values);
@@ -40,9 +41,9 @@ const Calculations = (props) => {
     }
     const endIndex = arr.length + arr1.length - 1;
     console.log(endIndex);
-    const lhg = y.slice(0, k + l - 1).map((item) => { return <li>{item}</li> });
+    const lhg = y.slice(0, k + l - 1).map((item) => { return <p className='itemP'>{item}</p> });
     return (
-        <div>
+        <div className='item'>
             {lhg}
         </div>
     )

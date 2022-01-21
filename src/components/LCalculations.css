@@ -1,0 +1,10 @@
+.item{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    width: fit-content;
+}
+
+.itemP{
+    margin-right: 2%;
+}

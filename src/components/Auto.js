@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import ACalculations from './ACalculations';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 const Auto = () => {
     const [val, setVal] = useState("");
     //const [vals, setVals] = useState("");
     const [face, setFace] = useState(false);
+    const[count, setCount]= useState(0);
     const handleChange = (e) => {
         e.preventDefault();
         const target = e.target.value;
@@ -20,16 +23,88 @@ const Auto = () => {
     //     setVals(target);
     // }
     //let calculation="calc";
+
+    const eventHandler = (e) => {
+        e.preventDefault();
+        setCount(0);
+    }
+
+    const eventsHandler = (e) => {
+        e.preventDefault();
+        setCount(1);
+    }
+
     return (
-        <div className="App">
-            <form>
-                <label>Input Sequence</label>
-                <input type="text" onChange={handleChange} />
-                <br />
-                <button type="button" onClick={changeApp}>Submit</button>
-            </form>
-            {face ? <ACalculations values={val} /> : null}
+        <div>
+        <Link to="/">
+            <h1 className='title1'>AUTO CONVOLUTION</h1>
+        </Link>
+        <div className='heading'>
+            <div>
+                <form>
+                    <div className='formCard'>
+                        <div className='label1'>
+                            <label>Input Sequence, x(n): </label>
+                            <input type="text" onChange={handleChange} />
+                        </div>
+                        <br />
+                    </div>
+                    <div className='submit'>
+                        <Button type="button"  class="btn" onClick={changeApp}>Submit</Button>
+                    </div>
+                </form>
+                <div className='output'>
+                    <h4 className='out'>OUTPUT SEQUENCE, y(n): </h4>
+                    {face ? <ACalculations values={val} values1={val} /> : null}
+                </div>
+            </div>
+            
+            <div className='impor'>
+            <div className='changeimp'>
+                <Button className='help' onClick={(e) => eventHandler(e)}>About</Button>
+                <Button className='help' onClick={(e) => eventsHandler(e)}>Help</Button>  
+            </div>
+            {count === 1?
+            <div className='impPoints'>
+                <h3 className='points'>IMPORTANT POINTS:</h3>
+                <ul>
+                    <li>
+                        In the following input fields, please provide space-separated integers.
+                    </li>
+                    <li>
+                        Input Sequence is x(n).
+                    </li>
+                    <li>
+                        Impulse Sequence is h(n) = Input Sequence is x(n). 
+                    </li>
+                    <li>
+                        So no need to write 2nd Sequence.
+                    </li>
+                    <li>
+                        Output Sequence is y(n).
+                    </li>
+                    <li>
+                        Please constrain your input to 30 values.
+                    </li>
+                    <li>
+                        Please refrain from submitting empty sequences. 
+                    </li>
+                </ul>
+            </div> : 
+            <div className="impPoints">
+                <p className='intro-about'>
+                The DSP Calculator lets you calculate various DSP sequences online — for free!
+                </p>
+                <p className='intro-about1'>
+                Our calculator allows you to check your solutions to various DSP Sequences. It helps you practice by showing you the correct result of the given sequence.
+                <br /> For more about how to use the DSP Calculator, go to "Help".
+                <br />And now: Happy calculating!
+                </p>
+            </div>
+            }
         </div>
+        </div>
+    </div>
     );
 }
 
